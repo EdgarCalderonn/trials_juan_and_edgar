@@ -15,7 +15,20 @@
     <span id="survey-form">
     <span id="name-label">Name:</span> <br><input id="name" type="text" name="name" placeholder="Enter your name"><br>
     <span id="email-label">Email:</span><br><input id="email" type="email" name="name" placeholder="Enter your email" pattern="[^ @]*@[^ @]*"><br>
-    <span id="number-label">Age:</span> <br><input id="number" type="number" name="name" placeholder="Enter your age" min=1 max=100 oninvalid="this.setCustomValidity('Cannot enter value greater than 100 or minor than 1')">
+    <span id="number-label">Age:</span> <br><input id="number" type="number" name="name" placeholder="Enter your age" min=1 max=100 oninvalid="this.setCustomValidity('Cannot enter value greater than 100 or minor than 1')"><br>
+    <span id="dropdown">Which option best describes your current role?</span> <br>
+    <select>
+      <option id="dropdown" value="Student">Student</option>
+      <option id="dropdown" value="Full-time-job">Full Time Job</option>
+      <option id="dropdown" value="Full-time-learner">Full Time learner</option>
+      <option id="dropdown" value="prefer-not-to-say">Prefer not to say</option>
+      <option id="dropdown" value="Other">Other</option>
+    </select>
+    <br>
+    <span>Would you recommend freeCodeCamp to a friend?</span><br>
+    <input type="radio" name="recommend" value="definitely">Definitely<br>
+    <input type="radio" name="recommend" value="maybe">Maybe<br>
+    <input type="radio" name="recommend" value="not-sure">Not Sure<br>
 
   </form>
 
