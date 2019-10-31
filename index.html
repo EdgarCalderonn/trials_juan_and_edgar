@@ -11,26 +11,19 @@
 
     <h1 id="title">Hello World, we are software developers!</h1>
 
-    <p id="description" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error veritatis delectus non. Eligendi quos ducimus debitis officiis ullam aliquam vitae! Maxime praesentium libero beatae error quae sit a voluptate?</p>
-    <form id="survey-form">
-    Name: <br><input id="name" type="text" name="name" placeholder="Enter your name"><br>
-    Email: <br><input id="email" type="email" name="name" placeholder="Enter your email" pattern="[^ @]*@[^ @]*"><br>
-    Age: <br><input id="number" type="number" name="name" placeholder="Enter your age">
+    <span id="description" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error veritatis delectus non. Eligendi quos ducimus debitis officiis ullam aliquam vitae! Maxime praesentium libero beatae error quae sit a voluptate?</p>
+    <span id="survey-form">
+    <span id="name-label">Name:</span> <br><input id="name" type="text" name="name" placeholder="Enter your name"><br>
+    <span id="email-label">Email:</span><br><input id="email" type="email" name="name" placeholder="Enter your email" pattern="[^ @]*@[^ @]*"><br>
+    <span id="number-label">Age:</span> <br><input id="number" type="number" name="name" placeholder="Enter your age" min=1 max=100 oninvalid="this.setCustomValidity('Cannot enter value greater than 100 or minor than 1')">
+
   </form>
 
 
-    <!--
 
-    Hello Camper!
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
 
-    - The freeCodeCamp Team
 
-    -->
     <script  src="js/index.js"></script>
   </body>
 </html>
